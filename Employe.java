@@ -7,7 +7,18 @@ public class Employe
 	protected float ancienSalaire;
 	protected float nouveauSalaire;
 	
-	
+	public String toString()
+	{
+		String str = "";
+		float augmentation = this.nouveauSalaire-this.ancienSalaire;
+		if (augmentation > 0)
+			str = str + "-"+this.nom+", "+this.age+", "+(int)this.salaire
+					  +" (+"+(int)augmentation+" apres augmentation)";
+		else
+			str = str +"-"+this.nom+", "+this.age+", "+(int)this.salaire;
+				
+		return str;
+	}
 	
 	public void affiche(Employe employe)
 	{
