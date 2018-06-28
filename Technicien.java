@@ -3,6 +3,13 @@ public class Technicien extends Employe
 {
 	private byte grade;
 	
+	public String toString()
+	{
+		String str = "";
+		str = super.toString() + "\tgrade " + this.grade ;
+		  
+		return str;
+	}
 	
 	public void affiche(Technicien tech)
 	{
@@ -14,7 +21,6 @@ public class Technicien extends Employe
 			System.out.println("-"+tech.nom+", "+tech.age+", "+(int)tech.salaire);
 	}
 	
-
 	// Constructeur
 	public Technicien(String nom,int age,float salaire,byte grade)
 	{
@@ -22,12 +28,9 @@ public class Technicien extends Employe
 		this.grade = grade;
 	}
 
-	
 	// Getter
 	public byte getGrade() { return this.grade;	}
 
 	// Setter
-	public void setGrade(byte grade) { this.grade = grade;	}
-	
-	
+	public void setGrade(byte grade) { this.grade = grade;	}	
 }

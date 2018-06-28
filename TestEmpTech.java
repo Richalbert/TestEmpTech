@@ -1,16 +1,14 @@
 
 public class TestEmpTech
 {
-
 	private static void affichage(Employe albert, Employe bernard, Technicien jacques)
 	{
-		System.out.println("Employé");
-		albert.affiche(albert);
-		bernard.affiche(bernard);
-		System.out.println("Technicien");
-		jacques.affiche(jacques);
+		System.out.println("Employé :");
+		System.out.println(albert.toString());
+		System.out.println(bernard.toString());
+		System.out.println("Technicien :");
+		System.out.println(jacques.toString());
 	}
-	
 	
 	public static void main(String[] args)
 	{
@@ -21,7 +19,6 @@ public class TestEmpTech
 		
 		affichage(albert,bernard,jacques);
 		
-		
 		System.out.println("*************************");
 		System.out.println("C Noel ... Augmentation !");
 		System.out.println("*************************");
@@ -29,8 +26,6 @@ public class TestEmpTech
 		bernard.augmentation(500);
 		jacques.augmentation(650);
 		
-		affichage(albert,bernard,jacques);
-		
+		affichage(albert,bernard,jacques);	
 	}
-
 }
